@@ -25,6 +25,11 @@ public class Velocista extends Ciclista {
     public void setVelocidadPromedioSprint(double velocidadPromedioSprint) {
         this.velocidadPromedioSprint = velocidadPromedioSprint;
     }
+
+    @Override
+    public String imprimirTipo() {
+        return "Es un Velocista";
+    }
     
     @Override
     public void imprimirDatos() {
