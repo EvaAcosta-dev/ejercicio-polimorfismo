@@ -68,7 +68,6 @@ public class Equipo {
         for (Ciclista ciclista : ciclistas) {
             if (ciclista.getIdentificador() == id) {
                 ciclista.imprimirDatos();
-                System.out.println(ciclista.imprimirTipo());
                 encontrado = true;
                 break;
             }
