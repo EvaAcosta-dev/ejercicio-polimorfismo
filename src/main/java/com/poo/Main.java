@@ -8,9 +8,11 @@ public class Main {
 
         Velocista velocista = new Velocista(101, "Stiven Franco", 800.0, 70.5);
         velocista.setTiempoAcumulado(320);
+        velocista.setTiempoAcumulado(2, 15);//sobrecarga
 
         Escalador escalador = new Escalador(102, "Lauren Sofia", 25.0f, 15.5f);
         escalador.setTiempoAcumulado(340);
+        
 
         Contrarelojista contrarelojista = new Contrarelojista(103, "Eva Maria", 65.0);
         contrarelojista.setTiempoAcumulado(310);

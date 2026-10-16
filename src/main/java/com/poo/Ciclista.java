@@ -38,7 +38,9 @@ public abstract class Ciclista {
     public void setTiempoAcumulado(int tiempoAcumulado) {
         this.tiempoAcumulado = tiempoAcumulado;
     }
-
+    public void setTiempoAcumulado(int horas, int minutos) {
+    this.tiempoAcumulado = (horas * 60) + minutos;
+    }
     // Métodos específicos.Método abstracto. Obliga a las clases hijas a implementarlo
     public abstract String imprimirTipo();
 
