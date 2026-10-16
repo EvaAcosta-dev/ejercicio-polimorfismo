@@ -1,6 +1,7 @@
 package com.poo;
 
 public abstract class Ciclista {
+    //esta es la clase base no se puede instanciar directamente al ser abstract
      // Atributos privados
     private int identificador;
     private String nombre;
@@ -38,7 +39,7 @@ public abstract class Ciclista {
         this.tiempoAcumulado = tiempoAcumulado;
     }
 
-    // Métodos específicos
+    // Métodos específicos.Método abstracto. Obliga a las clases hijas a implementarlo
     public abstract String imprimirTipo();
 
     public void imprimirDatos() {

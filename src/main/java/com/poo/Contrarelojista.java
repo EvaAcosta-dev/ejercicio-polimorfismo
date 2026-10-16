@@ -15,7 +15,8 @@ public class Contrarelojista extends Ciclista {
     public void setVelocidadMaxima(double velocidadMaxima) {
         this.velocidadMaxima = velocidadMaxima;
     }
-
+//polimorfismo dinamico mediante sobreescritura y es en tiempo de ejecucion 
+//compilador por si solo no sabe que metodo implementar hasta que se defina el objeto
     @Override
     public String imprimirTipo() {
         return "Es un Contrarrelojista";
