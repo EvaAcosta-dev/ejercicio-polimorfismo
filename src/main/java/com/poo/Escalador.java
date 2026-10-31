@@ -6,6 +6,12 @@ public class Escalador extends Ciclista {
 
     public Escalador(int identificador, String nombre, float aceleracionPromedio, float gradoRampa) {
         super(identificador, nombre);
+        if (aceleracionPromedio <= 0) {
+            throw new IllegalArgumentException("La aceleración promedio debe ser mayor que 0");
+        }
+        if (gradoRampa < 0) {
+            throw new IllegalArgumentException("El grado de rampa no puede ser negativo");
+        }
         this.aceleracionPromedio = aceleracionPromedio;
         this.gradoRampa = gradoRampa;
     }
