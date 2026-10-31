@@ -5,6 +5,9 @@ public class Contrarelojista extends Ciclista {
 
     public Contrarelojista(int identificador, String nombre, double velocidadMaxima) {
         super(identificador, nombre);
+        if (velocidadMaxima < 0) {
+            throw new IllegalArgumentException("La velocidad máxima no puede ser negativa");
+        }
         this.velocidadMaxima = velocidadMaxima;
     }
 
@@ -13,6 +16,9 @@ public class Contrarelojista extends Ciclista {
     }
 
     public void setVelocidadMaxima(double velocidadMaxima) {
+        if (velocidadMaxima < 0) {
+            throw new IllegalArgumentException("La velocidad máxima no puede ser negativa");
+        }
         this.velocidadMaxima = velocidadMaxima;
     }
 

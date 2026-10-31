@@ -10,6 +10,12 @@ public class Equipo {
     private final List<Ciclista> ciclistas;
 
     public Equipo(String nombreEquipo, String pais) {
+        if (nombreEquipo == null || nombreEquipo.trim().isEmpty()) {
+            throw new IllegalArgumentException("El nombre del equipo no puede ser nulo o vacío");
+        }
+        if (pais == null || pais.trim().isEmpty()) {
+            throw new IllegalArgumentException("El país no puede ser nulo o vacío");
+        }
         this.nombreEquipo = nombreEquipo;
         this.pais = pais;
         this.ciclistas = new ArrayList<>();

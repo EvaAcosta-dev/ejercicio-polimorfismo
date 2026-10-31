@@ -8,9 +8,15 @@ public abstract class Ciclista {
 
     // Constructor
     public Ciclista(int identificador, String nombre) {
+        if (identificador <= 0) {
+            throw new IllegalArgumentException("El identificador debe ser mayor que 0");
+        }
+        if (nombre == null || nombre.trim().isEmpty()) {
+            throw new IllegalArgumentException("El nombre no puede ser nulo o vacío");
+        }
         this.identificador = identificador;
         this.nombre = nombre;
-        this.tiempoAcumulado = 0; // Inicializado por defecto
+        this.tiempoAcumulado = 0;
     }
 
     // Métodos Getter y Setter
@@ -19,6 +25,9 @@ public abstract class Ciclista {
     }
 
     public void setIdentificador(int identificador) {
+        if (identificador <= 0) {
+            throw new IllegalArgumentException("El identificador debe ser mayor que 0");
+        }
         this.identificador = identificador;
     }
 
@@ -27,6 +36,9 @@ public abstract class Ciclista {
     }
 
     public void setNombre(String nombre) {
+        if (nombre == null || nombre.trim().isEmpty()) {
+            throw new IllegalArgumentException("El nombre no puede ser nulo o vacío");
+        }
         this.nombre = nombre;
     }
 
@@ -35,6 +47,9 @@ public abstract class Ciclista {
     }
 
     public void setTiempoAcumulado(int tiempoAcumulado) {
+        if (tiempoAcumulado < 0) {
+            throw new IllegalArgumentException("El tiempo acumulado no puede ser negativo");
+        }
         this.tiempoAcumulado = tiempoAcumulado;
     }
 

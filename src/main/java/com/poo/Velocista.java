@@ -6,6 +6,12 @@ public class Velocista extends Ciclista {
 
     public Velocista(int identificador, String nombre, double potenciaPromedio, double velocidadPromedioSprint) {
         super(identificador, nombre);
+        if (potenciaPromedio <= 0) {
+            throw new IllegalArgumentException("La potencia promedio debe ser mayor que 0");
+        }
+        if (velocidadPromedioSprint <= 0) {
+            throw new IllegalArgumentException("La velocidad promedio en sprint debe ser mayor que 0");
+        }
         this.potenciaPromedio = potenciaPromedio;
         this.velocidadPromedioSprint = velocidadPromedioSprint;
     }
