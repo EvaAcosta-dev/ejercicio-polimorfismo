@@ -8,11 +8,17 @@ public class Main {
 
         Velocista velocista = new Velocista(101, "Stiven Franco", 800.0, 70.5);
         velocista.setTiempoAcumulado(320);
+<<<<<<< HEAD
         velocista.setTiempoAcumulado(2, 15);//sobrecarga
 
         Escalador escalador = new Escalador(102, "Lauren Sofia", 25.0f, 15.5f);
         escalador.setTiempoAcumulado(340);
         
+=======
+
+        Escalador escalador = new Escalador(102, "Lauren Sofia", 25.0f, 15.5f);
+        escalador.setTiempoAcumulado(340);
+>>>>>>> origin/main
 
         Contrarelojista contrarelojista = new Contrarelojista(103, "Eva Maria", 65.0);
         contrarelojista.setTiempoAcumulado(310);
@@ -28,6 +34,7 @@ public class Main {
         equipo.calcularTotalTiempos();
         equipo.imprimirDatosEquipo();
 
+<<<<<<< HEAD
         // --- PRUEBA DE LOS MÉTODOS DE LA INTERFAZ ---
         System.out.println("\n--- DATOS DE COMPETENCIA (INTERFAZ) ---");
         // Llamamos a los métodos que provee la interfaz 'Competible' a través del velocista
@@ -35,6 +42,8 @@ public class Main {
         System.out.println("Puntos obtenidos en la etapa: " + velocista.calcularPuntosEtapa());
         System.out.println("¿Clasifica a la siguiente fase (Límite: 330 min)?: " + velocista.verificarClasificacion(330));
         
+=======
+>>>>>>> origin/main
         // Implementación de la búsqueda por teclado
         Scanner sc = new Scanner(System.in);
         System.out.print("\nIngrese el ID del ciclista que desea buscar: ");

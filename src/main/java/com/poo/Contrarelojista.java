@@ -25,7 +25,7 @@ public class Contrarelojista extends Ciclista {
 //compilador por si solo no sabe que metodo implementar hasta que se defina el objeto
     @Override
     public String imprimirTipo() {
-        return "Es un Contrarrelojista";
+        return "Es una Contrarrelojista";
     }
 
     @Override
