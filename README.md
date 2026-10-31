@@ -1,4 +1,4 @@
-# Ejercicio de Polimorfismo con Ciclistas
+# Ejercicio de Polimorfismo y Clase Abstracta con Ciclistas
 
 Proyecto desarrollado en Java que modela los ciclistas de un equipo de carrera.
 El ejercicio aplica una clase abstracta, herencia, sobrescritura de métodos y
@@ -179,31 +179,3 @@ En este caso se ejecutan los datos generales de `Ciclista` mediante
 `super.imprimirDatos()` y, además, los datos específicos de `Velocista`.
 Este mismo principio se usa al recorrer la lista del equipo.
 
-## Ejecución del proyecto
-
-Se requiere Java 17 y Maven.
-
-Compilar el proyecto:
-
-```bash
-mvn compile
-```
-
-Ejecutar el programa:
-
-```bash
-mvn exec:java -Dexec.mainClass="com.poo.Main"
-```
-
-Si el plugin de Maven no está configurado, también puede ejecutarse así:
-
-```bash
-mvn compile
-java -cp target/classes com.poo.Main
-```
-
-Ejecutar las pruebas unitarias:
-
-```bash
-mvn test
-```
